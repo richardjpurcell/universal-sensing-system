@@ -13,3 +13,6 @@ output_grids/
 
 # Copernicus ID
 .cdsapirc
+
+# NetCDF
+*.nc
