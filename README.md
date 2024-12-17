@@ -52,12 +52,8 @@ This proof of concept extends the **Universal Sensing System (USS)** by demonstr
 
 ### **2. Multi-Resolution Encoding**
    - Normalizes sensor values into a range \([0, 1]\) for efficient transmission:
-$$
-E_{\text{sensor}} = \sum_{i=1}^N \sum_{t=1}^T 
-\left[ \frac{V_{\text{temperature}}(i, t) - (-50)}{50 - (-50)} \right] \cdot R_{\text{temperature}} +
-\left[ \frac{V_{\text{u-wind}}(i, t) - (-20)}{20 - (-20)} \right] \cdot R_{\text{wind}} +
-\left[ \frac{V_{\text{v-wind}}(i, t) - (-20)}{20 - (-20)} \right] \cdot R_{\text{wind}}
-$$
+   
+![Rendered Equation](https://latex.codecogs.com/png.latex?E_{\text{sensor}}%20=%20\sum_{i=1}^N%20\sum_{t=1}^T%20%5Cleft%5B%20%5Cfrac%7BV_{\text{temperature}}(i,%20t)%20-%20(-50)%7D%7B50%20-%20(-50)%7D%20%5Cright%5D%20%5Ccdot%20R_{\text{temperature}}%20+%20%5Cleft%5B%20%5Cfrac%7BV_{\text{u-wind}}(i,%20t)%20-%20(-20)%7D%7B20%20-%20(-20)%7D%20%5Cright%5D%20%5Ccdot%20R_{\text{wind}}%20+%20%5Cleft%5B%20%5Cfrac%7BV_{\text{v-wind}}(i,%20t)%20-%20(-20)%7D%7B20%20-%20(-20)%7D%20%5Cright%5D%20%5Ccdot%20R_{\text{wind}})
 
 
 ### **3. Symbolic State Reporting**
