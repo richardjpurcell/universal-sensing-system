@@ -52,12 +52,13 @@ This proof of concept extends the **Universal Sensing System (USS)** by demonstr
 
 ### **2. Multi-Resolution Encoding**
    - Normalizes sensor values into a range \([0, 1]\) for efficient transmission:
-     \[
-     E_{\text{sensor}} = \sum_{i=1}^N \sum_{t=1}^T 
-     \left[ \frac{V_{\text{temperature}}(i, t) - (-50)}{50 - (-50)} \right] \cdot R_{\text{temperature}} +
-     \left[ \frac{V_{\text{u-wind}}(i, t) - (-20)}{20 - (-20)} \right] \cdot R_{\text{wind}} +
-     \left[ \frac{V_{\text{v-wind}}(i, t) - (-20)}{20 - (-20)} \right] \cdot R_{\text{wind}}
-     \]
+$$
+E_{\text{sensor}} = \sum_{i=1}^N \sum_{t=1}^T 
+\left[ \frac{V_{\text{temperature}}(i, t) - (-50)}{50 - (-50)} \right] \cdot R_{\text{temperature}} +
+\left[ \frac{V_{\text{u-wind}}(i, t) - (-20)}{20 - (-20)} \right] \cdot R_{\text{wind}} +
+\left[ \frac{V_{\text{v-wind}}(i, t) - (-20)}{20 - (-20)} \right] \cdot R_{\text{wind}}
+$$
+
 
 ### **3. Symbolic State Reporting**
    - Encodes sensor states such as **"operational"** in extreme environmental conditions to minimize transmission overhead.
